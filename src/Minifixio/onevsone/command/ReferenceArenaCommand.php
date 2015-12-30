@@ -54,7 +54,7 @@ class ReferenceArenaCommand extends Command {
 		$this->arenaManager->referenceNewArena($playerLocation);
 		
 		// Notify the op
-		$sender->sendMessage("[1vs1] A new arena has been created at your position ! There are " . $this->arenaManager->getNumberOfArenas() ." arenas.");
+		$sender->sendMessage(TextFormat::GREEN ."[1vs1] A new arena has been created at your position ! There are " . $this->arenaManager->getNumberOfArenas() ." arenas.");
 		
 		return true;
 		}
